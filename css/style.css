@@ -11,7 +11,8 @@ header {
 }
 
 .content {
-  height: 160vh;
+  display: inline-block;
+  height: calc(59vh + 2px);
   width: 100%;
   background-color: #ecf0f1;
 }
