@@ -1,8 +1,7 @@
-.no-margin {
+body {
   margin: 0;
-}
-.no-padding {
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -12,7 +11,7 @@ header {
 }
 
 .content {
-  height: 100vh;
+  height: 160vh;
   width: 100%;
   background-color: #ecf0f1;
 }
@@ -21,4 +20,142 @@ footer {
   height: 25vh;
   width: 100%;
   background-color: #95a5a6;
+  text-align: center;
+}
+
+/* Full Screen Menu */
+.menu-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-x: hidden;
+  transition: 0.8s;
+  text-align: center;
+}
+
+.menu-overlay-content {
+  position: relative;
+  top: 12.5%;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-overlay-content h1 {
+  padding: 8px;
+  font-size: 8vh;
+  color: #ecf0f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-overlay-content h2 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 5vh;
+  color: #34495e;
+  display: block;
+  transition: 0.3s;
+}
+
+.menuline {
+  width: 50%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.menu-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 5vh;
+  color: #ecf0f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-overlay a:hover,
+.menu-overlay a:focus {
+  color: #7f8c8d;
+}
+
+.menu-active {
+  pointer-events: none;
+  cursor: default;
+  padding: 8px;
+  margin: 0;
+}
+
+/* Menu Bars */
+.menu-wrapper {
+  display: inline-block;
+  height: 15vh;
+  width: 15vh;
+  float: right;
+  font-size: 6vh;
+}
+
+.menuicon {
+  margin: 4.5vh;
+  color: #fff;
+}
+
+/* Header Icon */
+.icon-wrapper {
+  display: inline-block;
+  height: 15vh;
+  width: 15vh;
+  font-size: 6vh;
+}
+.icon {
+  margin: 4.5vh;
+  color: #fff;
+}
+
+/* Header Title */
+.title {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  height: 15vh;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 6vh;
+  line-height: 15vh;
+  color: #fff;
+}
+
+/* Footer */
+.footer-icons-wrapper {
+  height: 5vh;
+  font-size: 3vh;
+}
+
+.footericon {
+  margin: 5px;
+  color: #fff;
+}
+
+.footer-icons-wrapper i:hover{
+  color: #2c3e50;
+}
+
+.footer-links-wrapper {
+  height: 5vh;
+  font-size: 3vh;
+  padding: 7.5vh 0 5vh 0;
+}
+
+.footerlink {
+  margin: 5px;
+  color: #fff;
+}
+
+.footer-links-wrapper a:hover {
+  color: #2c3e50;
+  text-decoration: none;
 }
