@@ -18,6 +18,7 @@ header {
 }
 
 footer {
+  position: relative;
   height: 25vh;
   width: 100%;
   background-color: #95a5a6;
